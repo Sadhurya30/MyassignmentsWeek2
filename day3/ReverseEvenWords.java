@@ -8,10 +8,17 @@ public class ReverseEvenWords {
       String[] split = test.split(" ");
       for(int i =0;i<split.length;i++) {
     	  if(i%2!=0) {
-    		  String a = split[i];
+    		 // System.out.println();
+    		 char[] arr1 = split[i].toCharArray();
+    		 for(int j=arr1.length-1;j>=0;j--) {
+    			 System.out.print(arr1[j]+ "");
+    		 }
+    		System.out.print(" ");
     	  }
+    	 // System.out.println();
     	  else {
-    		  
+    		 // System.out.print(" ");
+    		  System.out.print(split[i]+ " ");
     	  }
       }
 	}
